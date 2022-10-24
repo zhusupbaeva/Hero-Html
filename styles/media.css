@@ -1,0 +1,163 @@
+/* @media screen and (max-width:1400px) {
+    .header {
+        background: red;
+    }
+} */
+
+@media screen and (max-width: 1068px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .main__image img {
+        width: 100%;
+    }
+
+    .main__text {
+        padding-right: 0 ;
+    }
+
+    .about__image img  {
+        padding-left: 40px;
+    }
+}
+
+@media  screen and (max-width: 900px) {
+
+    .main__block {
+        flex-direction: column;
+    }
+    .main__text {
+        width: 100%;
+        margin-bottom: 60px ;
+    }
+
+    .main__image {
+        width: 70%;
+    }
+
+    .sponsor {
+        padding-bottom: 70px;
+    }
+
+    .about__item {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .about__image img {
+        margin-bottom: 60px;
+        width: 100%;
+        padding-left: 0 ;
+    }
+
+    .about__text {
+        width: 100%;
+        padding-right: 200px;
+        padding-left: 20px;
+    }
+
+    .about__text:first-child {
+        margin-bottom: 60px;
+    }
+
+    .about__item:last-child {
+        order: -3;
+    }
+
+
+}
+
+
+@media screen and (max-width: 800px) {
+    .header__nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        z-index: 6;
+    }
+
+    .header__nav.is-active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        z-index: 5;
+        top: 0 ;
+        left: 0 ;
+        width: 100%;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.9 );
+        
+    }
+
+    .header__nav.is-active ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__nav.is-active li {
+        margin-right: 0;
+        margin-bottom: 23px;
+    }
+
+    .header__nav.is-active a {
+        font-size: 20px;
+    }
+
+    .sponsor__block {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sponsor__block img {
+        padding: 0 15px;
+        margin-bottom: 40px ;
+    }
+
+    .about__item h2  {
+        font-size: 40px;
+    }
+    .about__item p {
+        padding-right: 20px;
+        font-size: 15px;
+    }
+
+    .about__image {
+        padding-left: 0px ;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main__text h1 {
+        font-size: 15vw;
+        line-height: 15vw;
+    }
+
+    .main__image {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .header__logo img {
+        width: 150px;
+    }
+
+    .main__link a:first-child {
+        margin-right: 15px;
+        padding: 19px 40px ;
+    }
+}
+
+
+
+
+/* red
+ max-width - изменение будут работать от 0 до 1400px
+ opacity - прозрачность элемента (0 - 1),но нужно учитывать что он не исчезает 
+ transform:scale() - исчезает навигация,высота и ширина 0
+*/

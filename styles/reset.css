@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Mulish&display=swap');
+
+*{
+    font-family: "Mulish", sans-serif;
+    outline: none;
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+
+
+}
+
+p{
+    margin: 0;
+
+}
+
+a{
+    /* text-shadow: ; */
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+}
+
+ul, ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+button{
+    border: none;
+    padding: 0;
+    background: transparent;
+
+}
+
+.container {
+    width: 1068px;
+    margin: 0 auto;
+
+}
+
+
+
+/* box-sizing: border box - увеличенные элементы помощью  padding, не влияли что на ширину элементов не плавало */
+/* margin: 0 auto; - блочные элементы ставить в центр */
